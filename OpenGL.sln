@@ -19,6 +19,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Glut", "Glut", "{930C7E00-5
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "2-PrimitivasBasicas", "2-PrimitivasBasicas\2-PrimitivasBasicas.vcxproj", "{66B7F517-4DC3-48CA-B614-3892AF68DB59}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "3-Transformaciones", "3-Transformaciones\3-Transformaciones.vcxproj", "{217A21EC-FB1B-4B9B-B3AE-D9B53356EDC0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -43,6 +45,14 @@ Global
 		{66B7F517-4DC3-48CA-B614-3892AF68DB59}.Release|x64.Build.0 = Release|x64
 		{66B7F517-4DC3-48CA-B614-3892AF68DB59}.Release|x86.ActiveCfg = Release|Win32
 		{66B7F517-4DC3-48CA-B614-3892AF68DB59}.Release|x86.Build.0 = Release|Win32
+		{217A21EC-FB1B-4B9B-B3AE-D9B53356EDC0}.Debug|x64.ActiveCfg = Debug|x64
+		{217A21EC-FB1B-4B9B-B3AE-D9B53356EDC0}.Debug|x64.Build.0 = Debug|x64
+		{217A21EC-FB1B-4B9B-B3AE-D9B53356EDC0}.Debug|x86.ActiveCfg = Debug|Win32
+		{217A21EC-FB1B-4B9B-B3AE-D9B53356EDC0}.Debug|x86.Build.0 = Debug|Win32
+		{217A21EC-FB1B-4B9B-B3AE-D9B53356EDC0}.Release|x64.ActiveCfg = Release|x64
+		{217A21EC-FB1B-4B9B-B3AE-D9B53356EDC0}.Release|x64.Build.0 = Release|x64
+		{217A21EC-FB1B-4B9B-B3AE-D9B53356EDC0}.Release|x86.ActiveCfg = Release|Win32
+		{217A21EC-FB1B-4B9B-B3AE-D9B53356EDC0}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
