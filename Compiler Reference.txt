@@ -1,0 +1,6 @@
+https://docs.microsoft.com/en-us/cpp/build/walkthrough-creating-and-using-a-dynamic-link-library-cpp?view=vs-2019
+
+$(SolutionDir)Glut
+$(SolutionDir)Glut\Lib
+glut32.lib
+xcopy /y /d "$(SolutionDir)Glut\glut32.dll" "$(OutDir)"
