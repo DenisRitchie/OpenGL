@@ -17,6 +17,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Glut", "Glut", "{930C7E00-5
 		Glut\glut32.lib = Glut\glut32.lib
 	EndProjectSection
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "2-PrimitivasBasicas", "2-PrimitivasBasicas\2-PrimitivasBasicas.vcxproj", "{66B7F517-4DC3-48CA-B614-3892AF68DB59}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -33,6 +35,14 @@ Global
 		{AC12B5F2-26DA-4A94-97E8-CB0E3109140C}.Release|x64.Build.0 = Release|x64
 		{AC12B5F2-26DA-4A94-97E8-CB0E3109140C}.Release|x86.ActiveCfg = Release|Win32
 		{AC12B5F2-26DA-4A94-97E8-CB0E3109140C}.Release|x86.Build.0 = Release|Win32
+		{66B7F517-4DC3-48CA-B614-3892AF68DB59}.Debug|x64.ActiveCfg = Debug|x64
+		{66B7F517-4DC3-48CA-B614-3892AF68DB59}.Debug|x64.Build.0 = Debug|x64
+		{66B7F517-4DC3-48CA-B614-3892AF68DB59}.Debug|x86.ActiveCfg = Debug|Win32
+		{66B7F517-4DC3-48CA-B614-3892AF68DB59}.Debug|x86.Build.0 = Debug|Win32
+		{66B7F517-4DC3-48CA-B614-3892AF68DB59}.Release|x64.ActiveCfg = Release|x64
+		{66B7F517-4DC3-48CA-B614-3892AF68DB59}.Release|x64.Build.0 = Release|x64
+		{66B7F517-4DC3-48CA-B614-3892AF68DB59}.Release|x86.ActiveCfg = Release|Win32
+		{66B7F517-4DC3-48CA-B614-3892AF68DB59}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
