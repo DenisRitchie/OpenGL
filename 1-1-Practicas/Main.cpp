@@ -1,30 +1,31 @@
 #include <framework.h>
 #include <stdlib.h>
 
+using namespace OpenGL;
 using namespace OpenGL::Helper;
 
 void Display()
 {
 	// Color de fondo negro
-	OpenGL::ClearColor::Black();
+	ClearColor::Black();
 
 	// Borrar la pantalla con el color de fondo negro
-	glClear(GL_COLOR_BUFFER_BIT);
+	Clear(ClearMask::ColorBufferBit);
 
 	// Modo de proyección
-	glMatrixMode(GL_PROJECTION);
+	SetMatrixMode(MatrixMode::Projection);
 
 	// Cargar la matriz de identidad
-	OpengGL::LoadIdentity();
+	LoadIdentity();
 
 	// Proyección ortográfica dentro del cubo señalado
-	OpenGL::Ortho::Left(-1).Right(1).Bottom(-1).Top(1).Near(-1).Far(1).Call();
+	Ortho::Left(-1).Right(1).Bottom(-1).Top(1).Near(-1).Far(1).Call();
 
 	// Modo de modelado
-	glMatrixMode(GL_MODELVIEW);
-
+	SetMatrixMode(MatrixMode::ModelView);
+	
 	// Dibujar un triángulo
-	OpenGL::Begin(OpenGL::BeginMode::Triangles);
+	Begin(BeginMode::Triangles);
 
 		// Color del primer vertice es rojo
 		glColor3d(1.0, 0.0, 0.0);
@@ -39,10 +40,10 @@ void Display()
 		glVertex3d(0.6, -0.2, 0.0);
 
 	// Terminar de dibujar
-	OpenGL::End();
+	End();
 
 	// Forzar el dibujado
-	OpenGL::Flush();
+	Flush();
 }
 
 int WINAPI wWinMain([[maybe_unused]] _In_ HINSTANCE hInstance, [[maybe_unused]] _In_opt_ HINSTANCE hPrevInstance, [[maybe_unused]] _In_ LPWSTR lpszCmdLine, [[maybe_unused]] _In_ INT32 nCmdShow)

@@ -4,9 +4,10 @@
 #include <Windows.h>
 #include <glut.h>
 
-namespace OpengGL
+namespace OpenGL
 {
 	// The glLoadIdentity function replaces the current matrix with the identity matrix.
+	// https://docs.microsoft.com/en-us/windows/win32/opengl/glloadidentity
 	inline void __stdcall LoadIdentity()
 	{
 		::glLoadIdentity();

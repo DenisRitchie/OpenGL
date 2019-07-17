@@ -2,6 +2,12 @@
 #ifndef _HELPER_HPP_
 #define _HELPER_HPP_
 
+// GetSystemMetrics function
+// https://docs.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-getsystemmetrics
+
+// GetInputState function
+// https://docs.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-getinputstate
+
 #include <tuple>
 
 namespace OpenGL::Helper

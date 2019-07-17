@@ -45,6 +45,12 @@
     <ClInclude Include="GlFunctions.hpp">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
+    <ClInclude Include="GlMatrixMode.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="GlClear.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="OpenGL.Constants.cpp">
