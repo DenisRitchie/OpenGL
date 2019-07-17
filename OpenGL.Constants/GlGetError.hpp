@@ -7,7 +7,10 @@
 namespace OpenGL
 {
     // The glGetError function returns error information.
-    auto GetError = ::glGetError;
+    inline GLenum __stdcall GetError()
+    {
+        return ::glGetError();
+    }
 
     // The glGetError function returns one of the following error codes.
     // Note that glGetError returns GL_INVALID_OPERATION if it is called between a call to glBegin and its corresponding call to glEnd.

@@ -5,3 +5,4 @@
 #include "GlBegin.hpp"
 #include "GlGetError.hpp"
 #include "GlClearColor.hpp"
+#include "Glut.hpp"

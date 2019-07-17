@@ -10,10 +10,16 @@
 namespace OpenGL
 {
     // The glBegin and glEnd functions delimit the vertices of a primitive or a group of like primitives.
-    auto Begin = ::glBegin;
+    inline void __stdcall Begin(GLenum mode)
+    {
+        ::glBegin(mode);
+    }
 
     // The glBegin and glEnd functions delimit the vertices of a primitive or a group of like primitives.
-    auto End = ::glEnd;
+    inline void __stdcall End()
+    {
+        ::glEnd();
+    }
 
     // The primitive or primitives that will be create from vertices presented between glBegin and the
     // subsequent glEnd. The following are accepted symbolic constants and their meanings.
