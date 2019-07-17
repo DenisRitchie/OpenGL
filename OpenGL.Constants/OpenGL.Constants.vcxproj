@@ -157,6 +157,7 @@
     <ClInclude Include="GlBegin.hpp" />
     <ClInclude Include="GlClearColor.hpp" />
     <ClInclude Include="GlGetError.hpp" />
+    <ClInclude Include="GlOrtho.hpp" />
     <ClInclude Include="Glut.hpp" />
     <ClInclude Include="GlutDisplayMode.hpp" />
     <ClInclude Include="Helper.hpp" />

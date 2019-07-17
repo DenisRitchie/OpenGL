@@ -5,5 +5,6 @@
 #include "GlBegin.hpp"
 #include "GlGetError.hpp"
 #include "GlClearColor.hpp"
+#include "GlOrtho.hpp"
 #include "Glut.hpp"
 #include "Helper.hpp"
