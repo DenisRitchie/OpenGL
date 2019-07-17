@@ -18,13 +18,25 @@ void Display()
 	glLoadIdentity();
 
 	// Proyección ortográfica dentro del cubo señalado
-	glOrtho(-1, 1, -1, 1, -1, 1);
+	OpenGL::Ortho::Left(-1).Right(1).Bottom(-1).Top(1).Near(-1).Far(1).Call();
 
 	// Modo de modelado
 	glMatrixMode(GL_MODELVIEW);
 
 	// Dibujar un triángulo
 	OpenGL::Begin(OpenGL::BeginMode::Triangles);
+
+		// Color del primer vertice es rojo
+		glColor3d(1.0, 0.0, 0.0);
+		glVertex3d(0.0, 0.8, 0.0);
+
+		// Color del segundo vertice es verde
+		glColor3d(0.0, 1.0, 0.0);
+		glVertex3d(-0.6, -0.2, 0.0);
+
+		// Color del tercer vertice es azúl
+		glColor3d(0.0, 0.0, 1.0);
+		glVertex3d(0.6, -0.2, 0.0);
 
 	// Terminar de dibujar
 	OpenGL::End();
