@@ -6,3 +6,4 @@
 #include "GlGetError.hpp"
 #include "GlClearColor.hpp"
 #include "Glut.hpp"
+#include "Helper.hpp"

@@ -49,7 +49,7 @@ namespace OpenGL
         };
 
     public:
-        static inline void Call() noexcept
+        static inline void Black() noexcept
         {
             ::glClearColor(0, 0, 0, 0);
         }

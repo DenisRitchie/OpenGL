@@ -159,6 +159,7 @@
     <ClInclude Include="GlGetError.hpp" />
     <ClInclude Include="Glut.hpp" />
     <ClInclude Include="GlutDisplayMode.hpp" />
+    <ClInclude Include="Helper.hpp" />
     <ClInclude Include="pch.h" />
   </ItemGroup>
   <ItemGroup>
