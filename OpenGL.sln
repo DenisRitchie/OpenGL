@@ -21,6 +21,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "2-PrimitivasBasicas", "2-Pr
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "3-Transformaciones", "3-Transformaciones\3-Transformaciones.vcxproj", "{217A21EC-FB1B-4B9B-B3AE-D9B53356EDC0}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OpenGL.Constants", "OpenGL.Constants\OpenGL.Constants.vcxproj", "{F3631446-2D68-4ABD-BDDA-A24A1C4DA4BB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -53,6 +55,14 @@ Global
 		{217A21EC-FB1B-4B9B-B3AE-D9B53356EDC0}.Release|x64.Build.0 = Release|x64
 		{217A21EC-FB1B-4B9B-B3AE-D9B53356EDC0}.Release|x86.ActiveCfg = Release|Win32
 		{217A21EC-FB1B-4B9B-B3AE-D9B53356EDC0}.Release|x86.Build.0 = Release|Win32
+		{F3631446-2D68-4ABD-BDDA-A24A1C4DA4BB}.Debug|x64.ActiveCfg = Debug|x64
+		{F3631446-2D68-4ABD-BDDA-A24A1C4DA4BB}.Debug|x64.Build.0 = Debug|x64
+		{F3631446-2D68-4ABD-BDDA-A24A1C4DA4BB}.Debug|x86.ActiveCfg = Debug|Win32
+		{F3631446-2D68-4ABD-BDDA-A24A1C4DA4BB}.Debug|x86.Build.0 = Debug|Win32
+		{F3631446-2D68-4ABD-BDDA-A24A1C4DA4BB}.Release|x64.ActiveCfg = Release|x64
+		{F3631446-2D68-4ABD-BDDA-A24A1C4DA4BB}.Release|x64.Build.0 = Release|x64
+		{F3631446-2D68-4ABD-BDDA-A24A1C4DA4BB}.Release|x86.ActiveCfg = Release|Win32
+		{F3631446-2D68-4ABD-BDDA-A24A1C4DA4BB}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

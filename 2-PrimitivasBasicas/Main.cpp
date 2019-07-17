@@ -1,54 +1,16 @@
-#include <Windows.h>
-#include <glut.h>
-#include <stdint.h>
+#include <framework.h>
 #include <array>
 #include <vector>
 #include <tuple>
-
-namespace OpenGL::BeginMode
-{
-    enum : GLenum
-    {
-        // Puntos Individuales
-        Points = GL_POINTS,
-
-        // Cada par de vértices forman un segmento individual
-        Lines = GL_LINES,
-
-        // Vértices de polígonos simple y conexo
-        Polygon = GL_POLYGON,
-
-        // Cada terna determina un triángulo
-        Triangles = GL_TRIANGLES,
-
-        // Cada cuátrupla determina un cuadrado
-        Quads = GL_QUADS,
-
-        // Serie de segmentos conectados
-        LineStrip = GL_LINE_STRIP,
-
-        // Series de segmentos conectados y cerrados
-        LineLoop = GL_LINE_LOOP,
-
-        // Cadenas de triángulos conectados
-        TriangleStrip = GL_TRIANGLE_STRIP,
-
-        // Cadenas de Polystrip (el centro del primer vértice)
-        TriangleFan = GL_TRIANGLE_FAN,
-
-        // Cuadriláteros encadenados
-        QuadStrip = GL_QUAD_STRIP
-    };
-}
 
 namespace DibujandoUnPunto
 {
     void DisplayDot()
     {
         glClear(GL_COLOR_BUFFER_BIT);
-        glBegin(OpenGL::BeginMode::Points);
+        OpenGL::Begin(OpenGL::BeginMode::Points);
         glVertex2i(50, 40);
-        glEnd();
+        OpenGL::End();
         glFlush();
     }
 
@@ -91,7 +53,7 @@ namespace PrimitivaBásica
 {
     inline void DibujoDePuntos()
     {
-        glBegin(OpenGL::BeginMode::Points);
+        OpenGL::Begin(OpenGL::BeginMode::Points);
         glColor3f(Red(1), Green(0), Blue(0));
         glVertex3f(X(-95), Y(-95), Z(0)); // Left  - Bottom
         glVertex3f(X( 95), Y( 95), Z(0)); // Right - Top
@@ -106,14 +68,14 @@ namespace PrimitivaBásica
             glVertex3i(X(-95), Y(  I), Z(0)); // Linea Izquierda
             glVertex3i(X( 95), Y(  I), Z(0)); // Línea Derecha
         }
-        glEnd();
+        OpenGL::End();
     }
 
     inline void DibujoDeLíneas()
     {
         static constexpr GLdouble Limit = 94.9;
 
-        glBegin(OpenGL::BeginMode::Lines);
+        OpenGL::Begin(OpenGL::BeginMode::Lines);
         glColor3f(Red(0.61), Green(0.93), Blue(0.03));
 
         for (GLdouble x1 = -Limit, x2 = -Limit, y1 = Limit, y2 = Limit; y1 > -Limit; y1 -= 5, x2 += 5)
@@ -126,10 +88,10 @@ namespace PrimitivaBásica
         glColor3f(Red(0.90), Green(0.16), Blue(0.93)); // Purpura
         glVertex2d(X(-95), Y(95));
         glVertex2d(X(95), Y(-95));
-        glEnd();
+        OpenGL::End();
 
         // Zip-Zap
-        glBegin(OpenGL::BeginMode::LineStrip);
+        OpenGL::Begin(OpenGL::BeginMode::LineStrip);
             // Diágonal secundaria
         glColor3f(Red(0), Green(0), Blue(1));
         glVertex2d(-95, -95);
@@ -145,9 +107,9 @@ namespace PrimitivaBásica
             !fmod(x, 10) ? glVertex2d(x, y + 5) : glVertex2d(x, y - 5);
 
         glVertex2d(-95, -95);
-        glEnd();
+        OpenGL::End();
 
-        glBegin(OpenGL::BeginMode::LineLoop);
+        OpenGL::Begin(OpenGL::BeginMode::LineLoop);
         glColor3d(1, 1, 1);
         glVertex3d(X(95), Y(0), Z(0));
         glVertex3d(X(70), Y(50), Z(0));
@@ -156,12 +118,12 @@ namespace PrimitivaBásica
         glVertex3d(X(60), Y(40), Z(0));
         glVertex3d(X(35), Y(-10), Z(0));
         glVertex3d(X(95), Y(-10), Z(0));
-        glEnd();
+        OpenGL::End();
     }
 
     inline void PoligonosTriangulos()
     {
-        glBegin(OpenGL::BeginMode::Triangles);
+        OpenGL::Begin(OpenGL::BeginMode::Triangles);
         glColor3d(Red(1), Green(1), Blue(1));
         glVertex3d(X(  0), Y( 60), Z(0));
         glVertex3d(X(-30), Y(-30), Z(0));
@@ -171,12 +133,12 @@ namespace PrimitivaBásica
         glVertex3d(X(  0), Y(-60), Z(0));
         glVertex3d(X( 30), Y( 30), Z(0));
         glVertex3d(X(-30), Y( 30), Z(0));
-        glEnd();
+        OpenGL::End();
     }
 
     inline void PoligonosTriangulosFan()
     {
-        glBegin(OpenGL::BeginMode::TriangleFan);
+        OpenGL::Begin(OpenGL::BeginMode::TriangleFan);
         glVertex2d(X(0), Y(0));
         glColor3d(Red(0), Green(0), Blue(0));
         glVertex2d(X(10), Y(30));
@@ -187,12 +149,12 @@ namespace PrimitivaBásica
         glVertex2d(X(-20), Y(0));
         glColor3d(Red(0.73), Green(0.48), Blue(0.34));
         glVertex2d(X(10), Y(30));
-        glEnd();
+        OpenGL::End();
     }
 
     inline void Poligonos()
     {
-        glBegin(OpenGL::BeginMode::Polygon);
+        OpenGL::Begin(OpenGL::BeginMode::Polygon);
         glColor3d(Red(0), Green(0), Blue(1));
         glVertex2d(X(-10), Y(30));
         glVertex2d(X(10), Y(30));
@@ -200,7 +162,7 @@ namespace PrimitivaBásica
         glVertex2d(X(10), Y(-30));
         glVertex2d(X(-10), Y(-30));
         glVertex2d(X(-20), Y(0));
-        glEnd();
+        OpenGL::End();
     }
 
     inline void DibujoDePoligonos()
@@ -214,15 +176,15 @@ namespace PrimitivaBásica
     {
         static constexpr GLdouble(*get_color)(GLdouble) = [](GLdouble value) constexpr { return value / 255.0; };
 
-        glBegin(OpenGL::BeginMode::Quads);
+        OpenGL::Begin(OpenGL::BeginMode::Quads);
         glColor3d(get_color(219), get_color(17), get_color(135));
         glVertex3d(X(65), Y(-35), Z(0));
         glVertex3d(X(90), Y(-35), Z(0));
         glVertex3d(X(90), Y(-15), Z(0));
         glVertex3d(X(65), Y(-15), Z(0));
-        glEnd();
+        OpenGL::End();
 
-        glBegin(OpenGL::BeginMode::QuadStrip);
+        OpenGL::Begin(OpenGL::BeginMode::QuadStrip);
         glColor3d(get_color(52), get_color(224), get_color(236));
         glVertex3d(X(-55), Y(-65), Z(0));
         glVertex3d(X(-55), Y(-80), Z(0));
@@ -231,7 +193,7 @@ namespace PrimitivaBásica
         glVertex3d(X( 0), Y(-65), Z(0));
         glVertex3d(X(55), Y(-65), Z(0));
         glVertex3d(X(55), Y(-80), Z(0));
-        glEnd();
+        OpenGL::End();
     }
 }
 
@@ -253,7 +215,7 @@ void Display()
 int WINAPI wWinMain([[maybe_unused]] _In_ HINSTANCE hInstance, [[maybe_unused]] _In_opt_ HINSTANCE hPrevInstance, [[maybe_unused]] _In_ LPWSTR lpCmdLine, [[maybe_unused]] _In_ int nShowCmd)
 {
     const int32_t ScreenX = GetSystemMetrics(SM_CXSCREEN),
-        ScreenY = GetSystemMetrics(SM_CYSCREEN);
+                  ScreenY = GetSystemMetrics(SM_CYSCREEN);
 
     constexpr int32_t Width = 1'000, Height = 500;
 
