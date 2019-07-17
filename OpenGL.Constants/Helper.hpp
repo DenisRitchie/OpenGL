@@ -34,6 +34,46 @@ namespace OpenGL::Helper
 		auto &[width, height] = size;
 		return CenteredCoordinates(width, height, x, y);
 	}
+
+	inline constexpr GLdouble Red(const GLdouble &red) noexcept
+	{
+		return red / 255.0;
+	}
+
+	inline constexpr GLdouble Green(const GLdouble &green) noexcept
+	{
+		return green / 255.0;
+	}
+
+	inline constexpr GLdouble Blue(const GLdouble &blue) noexcept
+	{
+		return blue / 255.0;
+	}
+
+	inline constexpr GLdouble Alpha(const GLdouble &alpha) noexcept
+	{
+		return alpha / 255.0;
+	}
+
+	inline constexpr GLdouble X(const GLdouble &x) noexcept
+	{
+		return x;
+	}
+
+	inline constexpr GLdouble Y(const GLdouble &y) noexcept
+	{
+		return y;
+	}
+
+	inline constexpr GLdouble Z(const GLdouble &z) noexcept
+	{
+		return z;
+	}
+
+	inline constexpr GLdouble W(const GLdouble &w) noexcept
+	{
+		return w;
+	}
 }
 
 #endif // !_HELPER_HPP_
