@@ -15,7 +15,7 @@ void Display()
 	glMatrixMode(GL_PROJECTION);
 
 	// Cargar la matriz de identidad
-	glLoadIdentity();
+	OpengGL::LoadIdentity();
 
 	// Proyección ortográfica dentro del cubo señalado
 	OpenGL::Ortho::Left(-1).Right(1).Bottom(-1).Top(1).Near(-1).Far(1).Call();
@@ -42,7 +42,7 @@ void Display()
 	OpenGL::End();
 
 	// Forzar el dibujado
-	glFlush();
+	OpenGL::Flush();
 }
 
 int WINAPI wWinMain([[maybe_unused]] _In_ HINSTANCE hInstance, [[maybe_unused]] _In_opt_ HINSTANCE hPrevInstance, [[maybe_unused]] _In_ LPWSTR lpszCmdLine, [[maybe_unused]] _In_ INT32 nCmdShow)

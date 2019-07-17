@@ -156,6 +156,7 @@
     <ClInclude Include="framework.h" />
     <ClInclude Include="GlBegin.hpp" />
     <ClInclude Include="GlClearColor.hpp" />
+    <ClInclude Include="GlFunctions.hpp" />
     <ClInclude Include="GlGetError.hpp" />
     <ClInclude Include="GlOrtho.hpp" />
     <ClInclude Include="Glut.hpp" />

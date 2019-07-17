@@ -3,9 +3,8 @@
 #define _GL_BEGIN_HPP_
 
 // https://docs.microsoft.com/en-us/windows/win32/opengl/glbegin
-
-#include <Windows.h>
-#include <glut.h>
+// https://docs.microsoft.com/en-us/windows/win32/opengl/glend
+// https://docs.microsoft.com/en-us/windows/win32/opengl/glflush
 
 namespace OpenGL
 {
@@ -19,6 +18,12 @@ namespace OpenGL
     inline void __stdcall End()
     {
         ::glEnd();
+    }
+
+    // he glFlush function forces execution of OpenGL functions in finite time.
+    inline void __stdcall Flush()
+    {
+        ::glFlush();
     }
 
     // The primitive or primitives that will be create from vertices presented between glBegin and the
