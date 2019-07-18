@@ -6,12 +6,15 @@
 #include <Glut.h>
 
 #include <stdint.h>
+#include <math.h>
 
 #include <tuple>
 #include <array>
 #include <string_view>
 #include <memory>
 #include <vector>
+#include <functional>
+#include <utility>
 
 #include "Helper.hpp"
 #include "GlFunctions.hpp"

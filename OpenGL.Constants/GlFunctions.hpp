@@ -11,12 +11,6 @@ namespace OpenGL
         ::glLoadIdentity();
     }
 
-    inline void __stdcall HexColor3d(const GLuint red, const GLuint green, const GLuint blue)
-    {
-        using namespace Helper;
-        glColor3d(Red(red), Green(green), Blue(blue));
-    }
-
     // https://developer.android.com/reference/android/graphics/Color.html
     inline void __stdcall ArgbColor(const COLORREF &color)
     {
