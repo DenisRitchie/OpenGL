@@ -13,6 +13,7 @@
 #include <memory>
 #include <vector>
 
+#include "Helper.hpp"
 #include "GlFunctions.hpp"
 #include "GlBegin.hpp"
 #include "GlGetError.hpp"
@@ -21,4 +22,3 @@
 #include "GlMatrixMode.hpp"
 #include "GlOrtho.hpp"
 #include "Glut.hpp"
-#include "Helper.hpp"

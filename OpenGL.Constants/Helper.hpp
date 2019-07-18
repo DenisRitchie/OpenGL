@@ -15,6 +15,11 @@ namespace OpenGL::Helper
         return std::make_tuple(::GetSystemMetrics(SM_CXSCREEN), ::GetSystemMetrics(SM_CYSCREEN));
     }
 
+    inline std::tuple<int32_t, int32_t> GlutDesktopSize() noexcept
+    {
+        return std::make_tuple(::glutGet(GLUT_SCREEN_WIDTH), ::glutGet(GLUT_SCREEN_HEIGHT));
+    }
+
     inline constexpr std::tuple<int32_t, int32_t> CenteredCoordinates(const int32_t width, const int32_t height, const int32_t x, const int32_t y) noexcept
     {
         return std::make_tuple((width >> 1) - (x >> 1), (height >> 1) - (y >> 1));
@@ -71,6 +76,36 @@ namespace OpenGL::Helper
     inline constexpr GLdouble W(const GLdouble &w) noexcept
     {
         return w;
+    }
+
+    inline constexpr GLdouble Left(const GLdouble &left) noexcept
+    {
+        return left;
+    }
+
+    inline constexpr GLdouble Right(const GLdouble &right) noexcept
+    {
+        return right;
+    }
+
+    inline constexpr GLdouble Bottom(const GLdouble &bottom) noexcept
+    {
+        return bottom;
+    }
+
+    inline constexpr GLdouble Top(const GLdouble &top) noexcept
+    {
+        return top;
+    }
+
+    inline constexpr GLdouble Near(const GLdouble &zNear) noexcept
+    {
+        return zNear;
+    }
+
+    inline constexpr GLdouble Far(const GLdouble &zFar) noexcept
+    {
+        return zFar;
     }
 }
 
