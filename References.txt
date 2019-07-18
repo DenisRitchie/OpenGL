@@ -8,5 +8,28 @@ https://docs.microsoft.com/en-us/cpp/cpp/argument-passing-and-naming-conventions
 Results of Calling Example
 https://docs.microsoft.com/en-us/cpp/cpp/results-of-calling-example?view=vs-2019
 
+Lista de prefijos/sufijos de tipo C++11
+https://stackoverrun.com/es/q/3275468
+
+C floating point number notation
+https://stackoverflow.com/questions/9786338/c-floating-point-number-notation
+
+Perímetro y área
+https://es.wikipedia.org/wiki/Per%C3%ADmetro_(geometr%C3%ADa)
+https://www.montereyinstitute.org/courses/DevelopmentalMath/TEXTGROUP-1-8_RESOURCE/U07_L2_T2_text_final_es.html
+
+Círculo y circunferencia: área, perímetro, longitud
+https://www.pasalo.es/circulo/
+https://www.sangakoo.com/es/temas/area-y-perimetro-de-una-circunferencia
+https://www.portaleducativo.net/octavo-basico/762/Circulo-y-circunferencia-area-perimetro-longitud
+
+Sector Circular
+https://www.matesfacil.com/ESO/geometria_plana/circular/sector/sector-circular-circunferencia-radio-area-perimetro-problemas-resueltos.html
+
+El número PI
+https://www.juegosdelogica.com/index.php/numero-pi
+
+
+
 
 
