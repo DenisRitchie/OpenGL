@@ -67,6 +67,12 @@ namespace OpenGL
             ::glClearColor(0, 0, 0, 0);
         }
 
+        // The white value that glClear uses to clear the color buffers. The default value is zero.
+        static inline void White() noexcept
+        {
+            ::glClearColor(1, 1, 1, 1);
+        }
+
         // The red value that glClear uses to clear the color buffers. The default value is zero.
         static inline constexpr Color Red(const GLclampf& red) noexcept
         {

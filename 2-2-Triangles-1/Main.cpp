@@ -8,7 +8,7 @@ void Display();
 
 int WINAPI wWinMain(_In_ HINSTANCE, _In_opt_ HINSTANCE, _In_ LPWSTR, _In_ INT32)
 {
-    constexpr int32_t width = 1'000, height = 500;
+    constexpr int32_t width = 800, height = 500;
     const auto desktop_size = GlutDesktopSize();
     const auto [x, y] = CenteredCoordinates(desktop_size, width, height);
 
@@ -16,6 +16,8 @@ int WINAPI wWinMain(_In_ HINSTANCE, _In_opt_ HINSTANCE, _In_ LPWSTR, _In_ INT32)
     InitWindowSize(width, height);
     InitWindowPosition(x, y);
     GlutCreateWindow("Triangles");
+    glEnable(GL_BLEND);
+    glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
     DisplayFunc(Display);
     MainLoop();
 
@@ -26,7 +28,7 @@ void DrawTriangles();
 
 void Display()
 {
-    ClearColor::Black();
+    ClearColor::White();
     Clear(ClearMask::ColorBufferBit);
     SetMatrixMode(MatrixMode::Projection);
     LoadIdentity();
@@ -43,22 +45,23 @@ void DrawTriangles()
     {
         // glColor3d(0.9373, 0.7216, 0.0627);
         // HexColor3d(0xEF, 0xB8, 0x10);
-        HexColor(0xEFB810);
+        // ArgbColor(0xFF'EF'B8'10);
+        RgbColor(0xEFB810);
 
         // Triangulo 1
         glVertex2d(X(-99), Y(-99));
-        glVertex2d(X(-33), Y(-99));
-        glVertex2d(X(-66), Y(-33));
+        glVertex2d(X(0), Y(-99));
+        glVertex2d(X(-49.5), Y(0));
 
         // Triangulo 2
-        glVertex2d(X(-33), Y(-99));
-        glVertex2d(X(33), Y(-99));
-        glVertex2d(X(0), Y(-33));
+        glVertex2d(X(0), Y(-99));
+        glVertex2d(X(99), Y(-99));
+        glVertex2d(X(49.5), Y(0));
 
         // Triangulo 3
-        glVertex2d(X(-66), Y(-33));
-        glVertex2d(X(0), Y(-33));
-        glVertex2d(X(-33), Y(33));
+        glVertex2d(X(-49.5), Y(0));
+        glVertex2d(X(49.5), Y(0));
+        glVertex2d(X(0), Y(99));
     }
     End();
 }

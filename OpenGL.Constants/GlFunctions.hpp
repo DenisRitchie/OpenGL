@@ -17,10 +17,25 @@ namespace OpenGL
         glColor3d(Red(red), Green(green), Blue(blue));
     }
 
-    inline void __stdcall HexColor(const COLORREF color)
+    // https://developer.android.com/reference/android/graphics/Color.html
+    inline void __stdcall ArgbColor(const COLORREF &color)
     {
         using namespace Helper;
-        glColor3d(Blue(GetBValue(color)), Green(GetGValue(color)), Red(GetRValue(color)));
+        GLdouble alpha = (color >> 24) & 0xff;
+        GLdouble red   = (color >> 16) & 0xff;
+        GLdouble green = (color >>  8) & 0xff;
+        GLdouble blue  = (color      ) & 0xff;
+        glColor4d(Red(red), Green(green), Blue(blue), Alpha(alpha));
+    }
+
+    // https://developer.android.com/reference/android/graphics/Color.html
+    inline void __stdcall RgbColor(const COLORREF &color)
+    {
+        using namespace Helper;
+        GLdouble red   = (color >> 16) & 0xff;
+        GLdouble green = (color >>  8) & 0xff;
+        GLdouble blue  = (color      ) & 0xff;
+        glColor3d(Red(red), Green(green), Blue(blue));
     }
 }
 
