@@ -8,6 +8,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Files", "Solution Files", "{AA1F7DCD-AD58-481F-8A48-C438725352EF}"
 	ProjectSection(SolutionItems) = preProject
 		Compiler Reference.txt = Compiler Reference.txt
+		README.md = README.md
+		References.txt = References.txt
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Glut", "Glut", "{930C7E00-5095-4442-85F5-4F23A4E7454B}"

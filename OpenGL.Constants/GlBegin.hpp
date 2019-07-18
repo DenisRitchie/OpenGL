@@ -9,7 +9,7 @@
 namespace OpenGL
 {
     // The glBegin and glEnd functions delimit the vertices of a primitive or a group of like primitives.
-    inline void __stdcall Begin(GLenum mode)
+    inline void __stdcall Begin(const GLenum mode)
     {
         ::glBegin(mode);
     }
@@ -72,7 +72,7 @@ namespace OpenGL
             // For even n, vertices n + 1, n, and n + 2 define triangle n. 
             // N - 2 triangles are drawn.
             TriangleStrip = GL_TRIANGLE_STRIP,
-            
+
             // Draws a connected group of triangles. 
             // One triangle is defined for each vertex presented after the first two vertices. 
             // Vertices 1, n + 1, n + 2 define triangle n. 

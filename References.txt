@@ -1,0 +1,12 @@
+
+Calling Conventions
+https://docs.microsoft.com/en-us/cpp/cpp/calling-conventions?view=vs-2019
+
+Argument Passing and Naming Conventions
+https://docs.microsoft.com/en-us/cpp/cpp/argument-passing-and-naming-conventions?view=vs-2019
+
+Results of Calling Example
+https://docs.microsoft.com/en-us/cpp/cpp/results-of-calling-example?view=vs-2019
+
+
+
