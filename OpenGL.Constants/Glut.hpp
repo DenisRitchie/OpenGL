@@ -65,7 +65,7 @@ namespace Glut
     // X Implementation Notes:
     // The proper X Inter - Client Communication Conventions Manual(ICCCM) top - level properties are established.
     // The WM_COMMAND property that lists the command line used to invoke the GLUT program is only established for the first window created.
-    inline int __stdcall GlutCreateWindow(const char *title)
+    inline int __stdcall GlutCreateWindow(const char *__restrict title)
     {
         return ::glutCreateWindow(title);
     }
