@@ -26,6 +26,24 @@ https://www.portaleducativo.net/octavo-basico/762/Circulo-y-circunferencia-area-
 Sector Circular
 https://www.matesfacil.com/ESO/geometria_plana/circular/sector/sector-circular-circunferencia-radio-area-perimetro-problemas-resueltos.html
 
+Vértices, Aristas, Caras, Etc.
+https://www.portaleducativo.net/segundo-basico/50/Identificacion-de-caras-aristas-vertices-en-cuerpos-geometricos
+
+Figuras convexas o cóncavas
+https://matematicasmodernas.com/figuras-convexas/
+https://figurasgeometricas.org/clasificar-angulos-segun-sus/
+https://figurasgeometricas.org/poligonos-concavos-y-convexos/
+
+Geometría Básica
+https://matematicasmodernas.com/
+https://matematicasmodernas.com/geometria/
+
+Tipo de coordenadas en Geometría
+https://matematicasmodernas.com/tipos-de-coordenadas-en-geometria/
+
+Conversión de coordenadas en el plano
+https://matematicasmodernas.com/conversion-de-coordenadas-en-el-plano/
+
 El número PI
 https://www.juegosdelogica.com/index.php/numero-pi
 

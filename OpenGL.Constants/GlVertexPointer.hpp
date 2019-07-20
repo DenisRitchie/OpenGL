@@ -107,10 +107,10 @@ namespace OpenGL
     // 
     // number_of_coordinate: The number of coordinates per vertex. The value of size must be 2, 3, or 4.
     // data_type: The data type of each coordinate in the array using the following symbolic constants: GL_SHORT, GL_INT, GL_FLOAT, and GL_DOUBLE.
-    // coordinate_of_the_first_vertex: A pointer to the first coordinate of the first vertex in the array.
-    inline void __stdcall VertexPointer(const VertexSize::Type number_of_coordinate, const VertexDataType::Type data_type, const GLvoid *__restrict coordinate_of_the_first_vertex)
+    // vertices: A pointer to the first coordinate of the first vertex in the array.
+    inline void __stdcall VertexPointer(const VertexSize::Type number_of_coordinate, const VertexDataType::Type data_type, const GLvoid *__restrict vertices)
     {
-        ::glVertexPointer(number_of_coordinate, data_type, 0, coordinate_of_the_first_vertex);
+        ::glVertexPointer(number_of_coordinate, data_type, 0, vertices);
     }
 }
 

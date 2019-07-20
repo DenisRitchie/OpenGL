@@ -46,22 +46,22 @@ namespace OpenGL::Helper
         return std::make_tuple(::glutGet(GLUT_SCREEN_WIDTH), ::glutGet(GLUT_SCREEN_HEIGHT));
     }
 
-    inline constexpr std::tuple<int32_t, int32_t> CenteredCoordinates(const int32_t width, const int32_t height, const int32_t x, const int32_t y) noexcept
+    inline constexpr std::tuple<int32_t, int32_t> CenteredCoordinates(const int32_t &parent_width, const int32_t &parent_height, const int32_t &child_width, const int32_t &child_height) noexcept
     {
-        return std::make_tuple((width >> 1) - (x >> 1), (height >> 1) - (y >> 1));
+        return std::make_tuple((parent_width >> 1) - (child_width >> 1), (parent_height >> 1) - (child_height >> 1));
     }
 
-    inline constexpr std::tuple<int32_t, int32_t> CenteredCoordinates(const std::tuple<int32_t, int32_t> &size, const int32_t x, const int32_t y) noexcept
+    inline constexpr std::tuple<int32_t, int32_t> CenteredCoordinates(const std::tuple<int32_t, int32_t> &parent_size, const int32_t &child_width, const int32_t &child_height) noexcept
     {
-        const auto &[width, height] = size;
-        return CenteredCoordinates(width, height, x, y);
+        const auto &[parent_width, parent_height] = parent_size;
+        return CenteredCoordinates(parent_width, parent_height, child_width, child_height);
     }
 
-    inline constexpr std::tuple<int32_t, int32_t> CenteredCoordinates(const std::tuple<int32_t, int32_t> &size, const std::tuple<int32_t, int32_t> &coord) noexcept
+    inline constexpr std::tuple<int32_t, int32_t> CenteredCoordinates(const std::tuple<int32_t, int32_t> &parent_size, const std::tuple<int32_t, int32_t> &child_size) noexcept
     {
-        const auto &[x, y] = coord;
-        const auto &[width, height] = size;
-        return CenteredCoordinates(width, height, x, y);
+        const auto &[child_width, child_height] = child_size;
+        const auto &[parent_width, parent_height] = parent_size;
+        return CenteredCoordinates(parent_width, parent_height, child_width, child_height);
     }
 
     // Get RGB color
@@ -131,6 +131,8 @@ namespace OpenGL::Helper
     inline constexpr GLdouble Near(const GLdouble &zNear) noexcept { return zNear; }
 
     inline constexpr GLdouble Far(const GLdouble &zFar) noexcept { return zFar; }
+
+    inline constexpr GLint FirstIndex(const GLint &first_index) noexcept { return first_index; }
 
     inline constexpr GLint FirstVertex(const GLint &first_index) noexcept { return first_index; }
 
