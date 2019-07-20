@@ -157,12 +157,15 @@
     <ClInclude Include="GlBegin.hpp" />
     <ClInclude Include="GlClear.hpp" />
     <ClInclude Include="GlClearColor.hpp" />
+    <ClInclude Include="GlDrawArrays.h" />
+    <ClInclude Include="GlEnableClientState.hpp" />
     <ClInclude Include="GlFunctions.hpp" />
     <ClInclude Include="GlGetError.hpp" />
     <ClInclude Include="GlMatrixMode.hpp" />
     <ClInclude Include="GlOrtho.hpp" />
     <ClInclude Include="Glut.hpp" />
     <ClInclude Include="GlutDisplayMode.hpp" />
+    <ClInclude Include="GlVertexPointer.hpp" />
     <ClInclude Include="Helper.hpp" />
     <ClInclude Include="pch.h" />
   </ItemGroup>

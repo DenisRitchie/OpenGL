@@ -81,17 +81,22 @@ inline void DrawQuads()
     // http://www.songho.ca/opengl/gl_vertexarray.html
     // http://math.hws.edu/graphicsbook/c3/s4.html
 
-    glEnableClientState(/*array type*/ GL_VERTEX_ARRAY);
-    glVertexPointer(
-        /*coord by vertex: 2, 3, 4*/ 2 /*glVertex2d*/,
-        /*vertex data type*/ GL_DOUBLE,
-        /*desplazamiento consecutivo*/ 0,
-        /*primer vertice del array*/ coords);
-    glDrawArrays(
-        /*BeginMode*/ GL_QUADS,
-        /*first data*/ 0,
-        /*n-vertices*/ 4);
-    glDisableClientState(/*array type*/ GL_VERTEX_ARRAY);
+    // glEnableClientState(/*array type*/ GL_VERTEX_ARRAY);
+    // glVertexPointer(
+    //     /*coord by vertex: 2, 3, 4*/ 2 /*glVertex2d*/,
+    //     /*vertex data type*/ GL_DOUBLE,
+    //     /*desplazamiento consecutivo*/ 0,
+    //     /*primer vertice del array*/ coords);
+    // glDrawArrays(
+    //     /*BeginMode*/ GL_QUADS,
+    //     /*first data*/ 0,
+    //     /*n-vertices*/ 4);
+    // glDisableClientState(/*array type*/ GL_VERTEX_ARRAY);
+
+    EnableClientState(ClientState::VertexArray);
+    VertexPointer(VertexSize::Two, VertexDataType::Double, coords);
+    DrawArrays(BeginMode::Quads, FirstVertex(0), NumberOfVertices(4));
+    DisableClientState(ClientState::VertexArray);
 }
 
 inline void DrawQuadsStrip()
@@ -147,9 +152,15 @@ inline void DrawQuadsStrip()
     };
 
     RgbColor(0x00311C);
-    glEnableClientState(GL_VERTEX_ARRAY);
-    glVertexPointer(/*glVertex2d*/ 2, GL_DOUBLE, /*step*/ 0, coords);
-    glDrawArrays(GL_QUAD_STRIP, 0, /*vertices*/ 8);
-    glDisableClientState(GL_VERTEX_ARRAY);
+    
+    // glEnableClientState(GL_VERTEX_ARRAY);
+    // glVertexPointer(/*glVertex2d*/ 2, GL_DOUBLE, /*step*/ 0, coords);
+    // glDrawArrays(GL_QUAD_STRIP, 0, /*vertices*/ 8);
+    // glDisableClientState(GL_VERTEX_ARRAY);
+    
+    EnableClientState(ClientState::VertexArray);
+    VertexPointer(VertexSize::Two, VertexDataType::Double, coords);
+    DrawArrays(BeginMode::QuadStrip, FirstVertex(0), NumberOfVertices(8));
+    DisableClientState(ClientState::VertexArray);
 }
 

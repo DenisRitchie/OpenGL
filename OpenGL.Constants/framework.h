@@ -26,4 +26,7 @@
 #include "GlClear.hpp"
 #include "GlMatrixMode.hpp"
 #include "GlOrtho.hpp"
+#include "GlEnableClientState.hpp"
+#include "GlVertexPointer.hpp"
+#include "GlDrawArrays.h"
 #include "Glut.hpp"
