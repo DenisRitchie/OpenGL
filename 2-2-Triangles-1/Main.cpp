@@ -32,7 +32,7 @@ void DrawTrianglesFan3();
 
 void Display()
 {
-    ClearColor::Rgb(0x393276);
+    ClearColor::Red(129u).Green(67u).Call();
     Clear(ClearMask::ColorBufferBit);
     SetMatrixMode(MatrixMode::Projection);
     LoadIdentity();
@@ -159,13 +159,45 @@ inline void DrawTrianglesFan3()
 {
     Begin(BeginMode::TriangleFan);
     {
-        RgbColor(0xFF0000);
+        RgbColor(0xFFFFFF);
+        glVertex2d(0, 0);
+        glVertex2d(-33, 99);
+        glVertex2d(33, 99);
+        glVertex2d(-33, -99);
+        glVertex2d(33, -99);
     }
     End();
 
     Begin(BeginMode::TriangleFan);
     {
-        RgbColor(0x000000);
+        RgbColor(0xFF0000);
+        glVertex2d(0, 0);
+        glVertex2d(-33, 99);
+        glVertex2d(-99, 33);
+        glVertex2d(99, -33);
+        glVertex2d(33, -99);
+    }
+    End();
+
+    Begin(BeginMode::TriangleFan);
+    {
+        RgbColor(0xFFFFFF);
+        glVertex2d(0, 0);
+        glVertex2d(-99, 33);
+        glVertex2d(-99, -33);
+        glVertex2d(99, 33);
+        glVertex2d(99, -33);
+    }
+    End();
+
+    Begin(BeginMode::TriangleFan);
+    {
+        RgbColor(0xFF0000);
+        glVertex2d(0, 0);
+        glVertex2d(33, 99);
+        glVertex2d(99, 33);
+        glVertex2d(-99, -33);
+        glVertex2d(-33, -99);
     }
     End();
 }
