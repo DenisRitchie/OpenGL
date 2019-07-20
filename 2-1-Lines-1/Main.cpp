@@ -51,6 +51,8 @@ void Display()
 
 inline void DrawLines()
 {
+    // https://iubatians.blogspot.com/2015/06/c-opengl-04-draw-lines.html
+
     Begin(BeginMode::Lines);
     {
         glColor3d(Red(255), Green(255), Blue(0));
@@ -86,6 +88,8 @@ inline void DrawLines()
 
 inline void DrawLinesStrip()
 {
+    // https://iubatians.blogspot.com/2015/06/c-opengl-05-draw-lines-strip.html
+
     Begin(BeginMode::LineStrip);
     {
         glColor3d(Red(255), Green(255), Blue(0));
@@ -112,6 +116,8 @@ inline void DrawLinesStrip()
 
 inline void DrawLinesLoop()
 {
+    // https://iubatians.blogspot.com/2015/06/c-opengl-06-draw-lines-loop.html
+
     Begin(BeginMode::LineLoop);
     {
         glColor3d(Red(255), Green(255), Blue(255));

@@ -29,7 +29,20 @@ https://www.matesfacil.com/ESO/geometria_plana/circular/sector/sector-circular-c
 El número PI
 https://www.juegosdelogica.com/index.php/numero-pi
 
+OpenGL Graphic Tutorial
+https://iubatians.blogspot.com/search/label/graphics
 
+Programación en 3D
+https://www.scratchapixel.com/index.php
+
+The Perspective and Orthographic Projection Matrix
+https://www.scratchapixel.com/lessons/3d-basic-rendering/perspective-and-orthographic-projection-matrix/projection-matrix-introduction
+
+OpengGL SSJ2 Tutorial
+https://open.gl/drawing
+
+OpenGL SSJ3 Tutorial
+http://www.opengl-tutorial.org/
 
 
 
