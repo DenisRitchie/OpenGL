@@ -62,5 +62,41 @@ https://open.gl/drawing
 OpenGL SSJ3 Tutorial
 http://www.opengl-tutorial.org/
 
+Funciones Trigonométricas
+    Conversión de coordenadas en el plano
+    https://matematicasmodernas.com/conversion-de-coordenadas-en-el-plano/
+
+    Círculo trigonométrico y funciones trigonométricas
+    https://matematicasmodernas.com/circulo-trigonometrico-y-funciones-trigonometricas/
+
+    Funciones trigonométricas básicas
+    https://matematicasmodernas.com/funciones-trigonometricas-basicas/
+
+    Gráficas funciones trigonométricas
+    https://matematicasmodernas.com/graficas-funciones-trigonometricas/
+
+    Gráfica de las funciones trigonométricas
+    https://matematicasmodernas.com/grafica-de-las-funciones-trigonometricas/
+
+    Graficar funciones trigonométricas
+    https://matematicasmodernas.com/graficar-funciones-trigonometricas/
+
+    Álgebra, Funciones, TrigonometríaSignos de las funciones trigonométricas
+    https://matematicasmodernas.com/signos-de-las-funciones-trigonometricas/
+
+    Funciones trigonométricas recíprocas
+    https://matematicasmodernas.com/funciones-trigonometricas-reciprocas/
+
+    Álgebra, Funciones, TrigonometríaRazones o funciones trigonométricas
+    https://matematicasmodernas.com/razones-o-funciones-trigonometricas/
+
+
+OpenGL 101 - Tutorial
+https://github.com/sol-prog/OpenGL-101
+https://solarianprogrammer.com/2013/05/13/opengl-101-drawing-primitives/
+
+
+
+
 
 
