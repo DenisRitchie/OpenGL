@@ -139,6 +139,7 @@ inline void DrawFermatsSpiral()
     glPointSize(3);
 
     // https://es.wikipedia.org/wiki/Espiral_de_Fermat
+    // http://qaru.site/questions/3298040/draw-fermat-spiral-with-opengl
     // Espiral de Fermat
     // La espiral de Fermat, denominada así en honor de Pierre de Fermat y también conocida como espiral parabólica, 
     // es una curva que responde a la siguiente ecuación:
