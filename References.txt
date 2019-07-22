@@ -1,3 +1,11 @@
+Alternativa a GLUT
+https://www.glfw.org/
+
+GL Functions
+https://docs.microsoft.com/en-us/windows/win32/opengl/gl-functions
+
+GLU Functions
+https://docs.microsoft.com/en-us/windows/win32/opengl/glu-functions
 
 Calling Conventions
 https://docs.microsoft.com/en-us/cpp/cpp/calling-conventions?view=vs-2019
